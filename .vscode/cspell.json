@@ -1,0 +1,10 @@
+{
+  "version": "0.2",
+  "language": "en,es",
+  "enabled": true,
+  "words": [],
+  "ignorePaths": [
+    "node_modules/**"
+  ],
+  "useGitignore": true
+}

@@ -1,0 +1,36 @@
+{
+  "name": "bintec_banca_e_learning",
+  "version": "1.0.0",
+  "description": "Repositorio creado para la solución del proyecto Banca E Learning",
+  "main": "index.js",
+  "scripts": {
+    "initialize": "npm run cleanPaths && npm install && npm run build && npm run test && npm run coverage",
+    "cleanPaths": "rm -rf $(find . -type d \\( -name node_modules -prune -o -name coverage -prune -o -name dist -prune \\))",
+    "build": "tsc --build tsconfig.json",
+    "test": "jest --config jest.config.js --silent=true",
+    "coverage": "open-cli coverage/index.html",
+    "build:watch": "tsc -w",
+    "test:watch": "jest --config jest.config.js --coverage --watchAll --testPathPattern=__test__ --silent=true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinRG27/bintec_banca_e_learning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevinRG27/bintec_banca_e_learning/issues"
+  },
+  "homepage": "https://github.com/kevinRG27/bintec_banca_e_learning#readme",
+  "dependencies": {
+    "langchain": "^0.0.168"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.6",
+    "jest": "^29.7.0",
+    "jest-sonar": "^0.2.16",
+    "ts-jest": "^29.1.1",
+    "open-cli": "^7.2.0",
+    "typescript": "^5.2.2"
+  }
+}
